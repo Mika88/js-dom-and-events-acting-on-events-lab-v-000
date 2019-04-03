@@ -18,7 +18,7 @@ function addNewElementAsLi() {
 
 function addNewLiOnClick() {
   let input = document.getElementsByTagName("input")[0];
-  $('input[type="submit"]').addEventListener('click', function(e) {
+  document.querySelector('input[type="submit"]').addEventListener('click', function(e) {
     addNewElementAsLi()
       input.value = "";
   });
