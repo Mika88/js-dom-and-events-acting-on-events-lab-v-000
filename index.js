@@ -18,12 +18,10 @@ function addNewElementAsLi() {
 
 function addNewLiOnClick() {
   let input = document.getElementsByTagName("input")[0];
-  if (input.value !== "") {
-    $('input[type="submit"]').addEventListener('click', function(e) {
-      addNewElementAsLi()
+  $('input[type="submit"]').addEventListener('click', function(e) {
+    addNewElementAsLi()
       input.value = "";
-    });
-  }
+  });
 }
 
 function clearEmployeeListOnLinkClick() {
