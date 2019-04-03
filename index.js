@@ -19,7 +19,7 @@ function addNewElementAsLi() {
 function addNewLiOnClick() {
   let input = document.getElementsByTagName("input")[0];
   if (input.value !== "") {
-    document.body.addEventListener('click', function(e) {
+    $('input[type="submit"]').addEventListener('click', function(e) {
       addNewElementAsLi()
       input.value = "";
     });
